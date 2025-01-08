@@ -92,7 +92,9 @@ POST /todos
 
 {
   "title": "homework",
+  
   "description": "Complete math and science homework",
+  
   "completed": false  
 }
  # completed will be False by default
