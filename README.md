@@ -139,9 +139,10 @@ Update a specific to-do item. This will replace the entire to-do item.
 Request Example:
 
 PUT /todos/unique_ID
+
 {
 
-  "title": " homework",
+  "title": " update homework",
   
   "description": "Complete math, science, and history homework",
   
@@ -155,7 +156,7 @@ Response Example:
 
   "id": "unique_ID",
   
-  "title": "homework",
+  "title": "update homework",
   
   "description": "Complete math, science, and history homework",
   
@@ -175,7 +176,7 @@ Request Example:
 PATCH /todos/unique_ID
 {
 
-  "completed": true
+  "completed": false
   
 }
 
@@ -188,7 +189,7 @@ Response Example:
   
   "description": "Complete math and science homework",
   
-  "completed": true,
+  "completed": false,
   
   "created_at": "2025-01-08T10:00:00Z"
   
