@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['my-todo-project-rhw0.onrender.com']
 
-
+PORT = os.getenv('PORT', '8000')  # Fallback to 8000 if PORT is not set
 # Application definition
 
 INSTALLED_APPS = [
