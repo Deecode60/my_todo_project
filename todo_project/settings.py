@@ -59,6 +59,8 @@ CORS_ALLOWED_ORIGINS = [
     'https://my-todo-project-rhw0.onrender.com',      
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOW_METHODS = [
     'GET',
     'POST',
