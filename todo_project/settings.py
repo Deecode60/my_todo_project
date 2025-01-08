@@ -28,8 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['https://my-todo-project-rhw0.onrender.com', 'localhost', '127.0.0.1']
 
-PORT = os.getenv('PORT', '8000')  # Fallback to 8000 if PORT is not set
-# Application definition
+
 
 CSRF_TRUSTED_ORIGINS = ['https://my-todo-project-rhw0.onrender.com']
 
@@ -124,9 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
