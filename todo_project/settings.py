@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-b()-6ut!(cq!jb_lyo@uqy@qy2e29)k%&q*9wzf4zw2fo_5r*k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['my-todo-project-rhw0.onrender.com']
+ALLOWED_HOSTS = ['my-todo-project-rhw0.onrender.com','127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
