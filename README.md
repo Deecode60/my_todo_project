@@ -57,9 +57,13 @@ GET /todos?search=homework
 **Response Example:**
   {
     "id": "unique_ID",
+
     "title": "homework",
+    
     "description": "Complete math and science homework",
+    
     "completed": false,
+    
     "created_at": "2025-01-08T10:00:00Z"
   }
 
@@ -76,9 +80,13 @@ Response Example:
 
 {
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math and science homework",
+  
   "completed": false,
+  
   "created_at": "2025-01-08T10:00:00Z"
 }
 
@@ -102,9 +110,13 @@ Response Example:
 
 {
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math and science homework",
+  
   "completed": false,
+  
   "created_at": "2025-01-08T12:00:00Z"
 }
 
@@ -118,7 +130,9 @@ Request Example:
 PUT /todos/unique_ID
 {
   "title": " homework",
+  
   "description": "Complete math, science, and history homework",
+  
   "completed": true
 }
 
@@ -126,9 +140,13 @@ Response Example:
 
 {
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math, science, and history homework",
+  
   "completed": true,
+  
   "created_at": "2025-01-08T10:00:00Z"
 }
 
@@ -147,9 +165,13 @@ PATCH /todos/unique_ID
 Response Example:
 {
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math and science homework",
+  
   "completed": true,
+  
   "created_at": "2025-01-08T10:00:00Z"
 }
 
