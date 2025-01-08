@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-b()-6ut!(cq!jb_lyo@uqy@qy2e29)k%&q*9wzf4zw2fo_5r*k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['my-todo-project-rhw0.onrender.com']
+ALLOWED_HOSTS = ['https://my-todo-project-rhw0.onrender.com']
 
 PORT = os.getenv('PORT', '8000')  # Fallback to 8000 if PORT is not set
 # Application definition
@@ -38,12 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+     'corsheaders',
     'rest_framework',
     'todos',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -53,6 +55,17 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'https://my-todo-project-rhw0.onrender.com',      
+]
+
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'DELETE',
+    'OPTIONS',
+]
 ROOT_URLCONF = 'todo_project.urls'
 
 TEMPLATES = [
