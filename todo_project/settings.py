@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-b()-6ut!(cq!jb_lyo@uqy@qy2e29)k%&q*9wzf4zw2fo_5r*k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://my-todo-project-rhw0.onrender.com']
+ALLOWED_HOSTS = ['https://my-todo-project-rhw0.onrender.com' 'localhost', '127.0.0.1']
 
 PORT = os.getenv('PORT', '8000')  # Fallback to 8000 if PORT is not set
 # Application definition
