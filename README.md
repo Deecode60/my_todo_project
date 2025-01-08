@@ -112,7 +112,7 @@ POST /todos
   "completed": false  
   
 }
- # completed will be False by default
+complete is always False by default 
 Response Example:
 
 {
