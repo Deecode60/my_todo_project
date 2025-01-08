@@ -56,11 +56,17 @@ GET /todos?search=homework
 
 **Response Example:**
   {
+  
     "id": "unique_ID",
+
     "title": "homework",
+    
     "description": "Complete math and science homework",
+    
     "completed": false,
+    
     "created_at": "2025-01-08T10:00:00Z"
+    
   }
 
  
@@ -75,11 +81,17 @@ GET /todos/unique_ID
 Response Example:
 
 {
+
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math and science homework",
+  
   "completed": false,
+  
   "created_at": "2025-01-08T10:00:00Z"
+  
 }
 
 
@@ -91,21 +103,29 @@ Request Example:
 POST /todos
 
 {
+
   "title": "homework",
   
   "description": "Complete math and science homework",
   
   "completed": false  
+  
 }
  # completed will be False by default
 Response Example:
 
 {
+
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math and science homework",
+  
   "completed": false,
+  
   "created_at": "2025-01-08T12:00:00Z"
+  
 }
 
 
@@ -117,19 +137,29 @@ Request Example:
 
 PUT /todos/unique_ID
 {
+
   "title": " homework",
+  
   "description": "Complete math, science, and history homework",
+  
   "completed": true
+  
 }
 
 Response Example:
 
 {
+
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math, science, and history homework",
+  
   "completed": true,
+  
   "created_at": "2025-01-08T10:00:00Z"
+  
 }
 
 
@@ -141,16 +171,24 @@ Request Example:
 
 PATCH /todos/unique_ID
 {
+
   "completed": true
+  
 }
 
 Response Example:
 {
+
   "id": "unique_ID",
+  
   "title": "homework",
+  
   "description": "Complete math and science homework",
+  
   "completed": true,
+  
   "created_at": "2025-01-08T10:00:00Z"
+  
 }
 
 **6. DELETE /todos/:id**
