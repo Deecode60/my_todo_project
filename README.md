@@ -8,6 +8,7 @@ The API allows users to:
 - Create a new to-do item
 - View a list of all to-do items
 - View a specific to-do item by ID
+- search for a specific to-do item by title
 - Update a to-do item (partially or fully)
 - Delete a to-do item
 
