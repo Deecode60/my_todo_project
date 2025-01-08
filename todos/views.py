@@ -18,6 +18,9 @@ def todo_list(request):
                 return Response({'error': 'No todos found matching the search query.'}, status=status.HTTP_404_NOT_FOUND)
         else:
             todos = Todo.objects.all()
+        if not todos.exists():
+            return Response({'empty_list': 'Your list is empty.'}, status=status.HTTP_200_OK)
+    
         serializer = TodoSerializer(todos, many=True)
         return Response(serializer.data)
 
@@ -68,4 +71,4 @@ def todo_detail(request, id):
 
     elif request.method == 'DELETE':
         todo.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response({'message': 'Todo has been deleted.'}, status=status.HTTP_204_NO_CONTENT)
