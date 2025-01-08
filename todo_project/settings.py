@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['https://my-todo-project-rhw0.onrender.com', 'localhost', '127.
 PORT = os.getenv('PORT', '8000')  # Fallback to 8000 if PORT is not set
 # Application definition
 
+CSRF_TRUSTED_ORIGINS = ['https://my-todo-project-rhw0.onrender.com']
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
